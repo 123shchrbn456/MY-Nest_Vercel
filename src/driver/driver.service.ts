@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { CreateDriverDto } from './dto/create-driver.dto';
-import { UpdateDriverDto } from './dto/update-driver.dto';
+// import { CreateDriverDto } from './dto/create-driver.dto';
+// import { UpdateDriverDto } from './dto/update-driver.dto';
 import { PrismaService } from '../prisma.service';
 import { Prisma } from '@prisma/client';
 
@@ -22,9 +22,9 @@ export class DriverService {
     return `This action returns a #${id} driver`;
   }
 
-  update(id: number, updateDriverDto: UpdateDriverDto) {
-    return `This action updates a #${id} driver`;
-  }
+  // update(id: number, updateDriverDto: UpdateDriverDto) {
+  //   return `This action updates a #${id} driver`;
+  // }
 
   remove(id: number) {
     return `This action removes a #${id} driver`;

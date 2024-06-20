@@ -8,8 +8,8 @@ import {
   Delete,
 } from '@nestjs/common';
 import { DriverService } from './driver.service';
-import { CreateDriverDto } from './dto/create-driver.dto';
-import { UpdateDriverDto } from './dto/update-driver.dto';
+// import { CreateDriverDto } from './dto/create-driver.dto';
+// import { UpdateDriverDto } from './dto/update-driver.dto';
 import { Prisma } from '@prisma/client';
 
 @Controller('driver')
@@ -31,10 +31,10 @@ export class DriverController {
     return this.driverService.findOne(+id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateDriverDto: UpdateDriverDto) {
-    return this.driverService.update(+id, updateDriverDto);
-  }
+  // @Patch(':id')
+  // update(@Param('id') id: string, @Body() updateDriverDto: UpdateDriverDto) {
+  //   return this.driverService.update(+id, updateDriverDto);
+  // }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
